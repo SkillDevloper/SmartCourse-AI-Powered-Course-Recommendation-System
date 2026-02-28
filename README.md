@@ -20,6 +20,12 @@ SmartCourse is an intelligent course recommendation engine built with dual algor
 - REST API for programmatic access (`/api/recommend`, `/api/history`, etc.)
 
 ---
+## Screenshots
+![Home](https://github.com/SkillDevloper/SmartCourse-AI-Powered-Course-Recommendation-System/blob/main/Screenshots/Home%20Page.png)
+![About](https://github.com/SkillDevloper/SmartCourse-AI-Powered-Course-Recommendation-System/blob/main/Screenshots/About%20Page.png)
+![Dashboard](https://github.com/SkillDevloper/SmartCourse-AI-Powered-Course-Recommendation-System/blob/main/Screenshots/User%20Dashboard%20Page.png)
+![Recommendation](https://github.com/SkillDevloper/SmartCourse-AI-Powered-Course-Recommendation-System/blob/main/Screenshots/Recommendation%20Page.png)
+---
 
 ## 🛠 Installation & Setup
 
@@ -30,7 +36,7 @@ SmartCourse is an intelligent course recommendation engine built with dual algor
 
 2. **Clone the repository and change directory**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SkillDevloper/SmartCourse-AI-Powered-Course-Recommendation-System.git
    cd SmartCourse
    ```
 
@@ -99,7 +105,6 @@ SmartCourse/
 │   ├── js/
 │   └── images/
 ├── database.db                 # SQLite database (auto-created)
-└── venv/                       # Python virtual environment (in .gitignore)
 ```
 
 ---
@@ -220,4 +225,4 @@ Built as a course recommendation system project demonstrating full-stack ML deve
 
 ---
 
-Happy learning and recommending! 🎓# SmartCourse-AI-Powered-Course-Recommendation-System
+Happy learning and recommending!
