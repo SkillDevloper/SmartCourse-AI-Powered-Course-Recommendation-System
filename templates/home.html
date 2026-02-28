@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section bg-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Find Your Perfect Course with AI</h1>
+                <p class="lead mb-4">SmartCourse uses advanced NLP and machine learning to recommend the most relevant courses based on your learning goals and interests.</p>
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('recommend_page') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-rocket"></i> Get Recommendations
+                    </a>
+                    <a href="{{ url_for('about') }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <i class="fas fa-brain display-1 opacity-75"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center mb-5">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <i class="fas fa-search text-primary fa-3x mb-3"></i>
+                    <h4>Intelligent Search</h4>
+                    <p>Natural language processing understands your learning goals beyond simple keywords.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <i class="fas fa-robot text-primary fa-3x mb-3"></i>
+                    <h4>Dual AI Models</h4>
+                    <p>Compare TF-IDF keyword-based recommendations with neural semantic understanding.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <i class="fas fa-chart-line text-primary fa-3x mb-3"></i>
+                    <h4>Personalized Dashboard</h4>
+                    <p>Track your search history and save favorite courses for future reference.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="mb-4">How It Works</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="step-number">1</div>
+                    <p>Enter your learning goal</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="step-number">2</div>
+                    <p>Choose recommendation model</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="step-number">3</div>
+                    <p>Get AI-powered recommendations</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="step-number">4</div>
+                    <p>Save and compare results</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<style>
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: bold;
+}
+.hero-section {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+</style>
+{% endblock %}

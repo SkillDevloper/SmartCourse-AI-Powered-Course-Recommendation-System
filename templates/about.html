@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0"><i class="fas fa-info-circle"></i> About SmartCourse</h2>
+                </div>
+                <div class="card-body">
+
+                    <!-- Project Overview -->
+                    <h4 class="text-primary">Project Overview</h4>
+                    <p class="mb-4">
+                        SmartCourse is an intelligent AI-powered course recommendation system that helps learners 
+                        discover the most relevant courses based on their natural language queries. The system 
+                        combines traditional keyword-based approaches with modern neural embeddings to provide 
+                        accurate and context-aware recommendations.
+                    </p>
+
+                    <!-- Technical Stack -->
+                    <h4 class="text-primary mt-4">Technical Stack</h4>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Backend:</strong> Flask (Python)</li>
+                                <li class="list-group-item"><strong>Frontend:</strong> Bootstrap 5, JavaScript</li>
+                                <li class="list-group-item"><strong>Database:</strong> SQLite</li>
+                                <li class="list-group-item"><strong>ML/NLP:</strong> scikit-learn, spaCy</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Embeddings:</strong> Sentence Transformers</li>
+                                <li class="list-group-item"><strong>Similarity:</strong> Cosine Similarity</li>
+                                <li class="list-group-item"><strong>Vectorization:</strong> TF-IDF</li>
+                                <li class="list-group-item"><strong>Persistence:</strong> Joblib, Pickle</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AI Models -->
+                    <h4 class="text-primary mt-4">AI Models</h4>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header bg-success text-white">
+                                    <h5 class="mb-0">TF-IDF Model</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p><strong>Approach:</strong> Keyword-based matching using TF-IDF</p>
+                                    <p><strong>Strength:</strong> Great for exact keyword matches and domain-specific terms</p>
+                                    <p><strong>Use Case:</strong> When queries contain specific technical terms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header bg-info text-white">
+                                    <h5 class="mb-0">Neural Model</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p><strong>Approach:</strong> Semantic understanding using Sentence-BERT embeddings</p>
+                                    <p><strong>Strength:</strong> Captures context and conceptual meaning beyond keywords</p>
+                                    <p><strong>Use Case:</strong> When looking for conceptually related courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dataset -->
+                    <h4 class="text-primary mt-4">Dataset Information</h4>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>The system uses a dataset of 8,500+ courses across multiple domains:</p>
+                            <ul>
+                                <li><strong>Computer Science & Data Science</strong></li>
+                                <li><strong>Business & Economics</strong></li>
+                                <li><strong>Engineering & Mathematics</strong></li>
+                                <li><strong>Science & Humanities</strong></li>
+                            </ul>
+                            <p>Each course includes title, description, department, difficulty level, rating, and university.</p>
+                        </div>
+                    </div>
+
+                    <!-- Evaluation Metrics -->
+                    <h4 class="text-primary mt-4">Evaluation Metrics</h4>
+                    <ul>
+                        <li><strong>Precision@K:</strong> Accuracy of top K recommendations</li>
+                        <li><strong>Recall@K:</strong> Coverage of relevant courses in top K</li>
+                        <li><strong>Hit Rate:</strong> Frequency of relevant courses appearing in recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
